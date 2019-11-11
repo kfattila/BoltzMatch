@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<bioml>
+	<note>
+	Each one of the parameters for x! tandem is entered as a labeled note node. 
+	Any of the entries in the default_input.xml file can be over-ridden by
+	adding a corresponding entry to this file. This file represents a minimum
+	input file, with only entries for the default settings, the output file
+	and the input spectra file name. 
+	See the taxonomy.xml file for a description of how FASTA sequence list 
+	files are linked to a taxon name.
+	</note>
+
+	<note type="input" label="list path, default parameters">default_input.xml</note>
+	<note type="input" label="list path, taxonomy information">taxonomy.xml</note>
+
+	<note type="input" label="protein, taxon">ipi_human_Target_ProtRev</note>
+	
+	<note type="input" label="spectrum, path">D:\msdatasets\AurumR151.mgf</note>
+
+	<note type="input" label="output, path">D:\boltzmatch\Xtandem\xt_aurum_lr_out.xml</note>
+	<note type="input" label="output, results">all</note>
+	<note type="input" label="spectrum, total peaks">50</note>
+	<note type="input" label="spectrum, fragment monoisotopic mass error">0.5</note>
+	<note type="input" label="spectrum, parent monoisotopic mass error plus">2</note>
+	<note type="input" label="spectrum, parent monoisotopic mass error minus">2</note>
+	<note type="input" label="spectrum, parent monoisotopic mass error units">Daltons</note>	
+	<note type="input" label="spectrum, parent monoisotopic mass isotope error">no</note>
+	<note type="input" label="scoring, maximum missed cleavage sites">1</note>
+	<note type="input" label="scoring, cyclic permutation">no</note>
+	<note type="input" label="scoring, include reverse">no</note>	
+	<note type="input" label="scoring, minimum ion count">1</note>    
+	<note type="input" label="residue, modification mass">57.022@C</note>
+	<note type="input" label="residue, potential modification mass">15.99@M</note>
+	<note type="input" label="spectrum, maximum parent charge">10</note>     
+	<note type="input" label="refine">no</note>
+	<note type="input" label="protein, saps">no</note>	
+	<note type="input" label="protein, quick acetyl">no</note>	
+	<note type="input" label="protein, quick pyrolidone">no</note>	
+	<note type="input" label="protein, cleavage site">[RK]|{P}</note>    
+	<note type="input" label="output, maximum valid expectation value">100</note>       
+	
+</bioml>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<bioml label="x! taxon-to-file matching list">
+	<taxon label="yeast">
+		<file format="peptide" URL="../fasta/scd.fasta.pro" />
+		<file format="peptide" URL="../fasta/scd_1.fasta.pro" />
+		<file format="peptide" URL="../fasta/crap.fasta.pro" />
+	</taxon>
+	<taxon label="ipi_human_Target_ProtRev">
+		<file format="peptide" URL="D./fasta/ipi.HUMAN.v3.87.target-protrev.fasta" />
+	</taxon>
+	<taxon label="iprg_Target_ProtRev">
+		<file format="peptide" URL="./fasta/ABRF_iPRG_2012.target-protrev.fasta" />
+	</taxon>
+	<taxon label="yeast_Target_ProtRev">
+		<file format="peptide" URL="./fasta/yeast.target-protrev.fasta" />
+	</taxon>
+	<taxon label="malaria_Target_ProtRev">
+		<file format="peptide" URL="./fasta/plasmo_Pfalciparum3D7_NCBI.target-protrev.fasta" />
+	</taxon>
+    
+    
+</bioml>

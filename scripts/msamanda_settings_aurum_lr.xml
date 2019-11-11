@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<settings>
+  <search_settings>
+    <!--valid values for specificity are: "FULL", "SEMI", "SEMI(C)", "SEMI(N)" -->
+    <enzyme specificity="FULL">Trypsin</enzyme>
+    <missed_cleavages>1</missed_cleavages>
+    <modifications>
+      <!-- <modification [fix="true|false"] [nterm="true|false"] [cterm="true|false"] [protein="true|false"] [delta_mass="+XX.XX"]>Name[(AA,AA)]</modification>-->
+      <modification fix="true" nterm="false" cterm="false">Carbamidomethyl(C)</modification>
+      <modification fix="false">Oxidation(M)</modification>
+      <!--modification nterm="true">Acetyl</modification-->
+      <!--modification>Phospho(S,T,Y)</modification-->
+      <!--modification delta_mass="17.231">MyOwnModif(K)</modification-->
+    </modifications>
+    <instrument>b, y</instrument>
+    <!--<ms1_tol unit="Da|ppm|mmu">VALUE</ms1_tol>  default: "5 ppm"-->
+    <ms1_tol unit="Da">2</ms1_tol>
+    <!--<ms2_tol unit="Da|ppm|mmu">VALUE</ms2_tol>  default: "0.02 Da"-->
+    <ms2_tol unit="Da">1.0005079</ms2_tol>
+    <max_rank>1</max_rank>
+    <generate_decoy>false</generate_decoy>
+    <!-- new settings -->
+    <PerformDeisotoping>false</PerformDeisotoping>
+    <!-- Maximum number of occurrences of a modification on a peptide. (min 0, max 10) -->
+    <MaxNoModifs>1</MaxNoModifs>
+    <!-- Maximum number of dynamic modifications per peptide. (min 0, max 10) -->
+    <MaxNoDynModifs>1</MaxNoDynModifs>
+    <!-- Maximum number of potential modification sites for a specific modification per peptide. Peptides with a higher number are discarded, due to a too high complexity. (min 0, max 20) -->
+    <MaxNumberModSites>1</MaxNumberModSites>
+    <!-- Maximum number of same neutral losses per peptide regarding water and ammonia losses. (min 0, max 5) -->
+    <MaxNumberNeutralLoss>0</MaxNumberNeutralLoss>
+    <!-- Maximum number of same neutral losses per peptide regarding modification specific losses. (min 0, max 5) -->
+    <MaxNumberNeutralLossModifications>0</MaxNumberNeutralLossModifications>
+    <!-- Only peptides with a certain length are matched. -->
+    <MinimumPepLength>0</MinimumPepLength>
+  </search_settings>
+
+
+  <basic_settings>
+    <instruments_file>/home/attila/MSAmanda/Instruments.xml</instruments_file>
+    <unimod_file>/home/attila/MSAmanda/unimod.xml</unimod_file>
+    <enzyme_file>/home/attila/MSAmanda/enzymes.xml</enzyme_file>
+    <!--new files for mzid-->
+    <unimod_obo_file>/home/attila/MSAmanda/unimod.obo</unimod_obo_file>
+    <psims_obo_file>/home/attila/MSAmanda/psi-ms.obo</psims_obo_file>
+    <monoisotopic>true</monoisotopic>
+    <considered_charges>1+</considered_charges>
+    <!-- Maximal number of proteins loaded into memory; bigger values need more memory. (min 1000, max 500000) -->
+    <LoadedProteinsAtOnce>100000</LoadedProteinsAtOnce>
+    <!-- The number of spectra that shall be processed at a time; bigger values need more memory. (min 1000, max 50000) -->
+    <LoadedSpectraAtOnce>4000</LoadedSpectraAtOnce>
+    <!-- "DEFAULT" = default path; change for other path-->
+    <data_folder>/home/attila/</data_folder>
+  </basic_settings>
+</settings>
